@@ -3,12 +3,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 PropertyAccess Component
 Name:		php-symfony2-PropertyAccess
-Version:	2.4.3
+Version:	2.4.4
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://pear.symfony.com/get/%{pearname}-%{version}.tgz
-# Source0-md5:	8e2165e5e9d4f3628cae08d396ad7ad4
+# Source0-md5:	2207bfaa356e240dfcba03060f5c1f83
 URL:		http://symfony.com/doc/2.4/components/property_access/introduction.html
 BuildRequires:	php-channel(pear.symfony.com)
 BuildRequires:	php-pear-PEAR
