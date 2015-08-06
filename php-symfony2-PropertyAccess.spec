@@ -36,6 +36,8 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{php_pear_dir}/Symfony/Component/%{package}
 cp -a *.php */ $RPM_BUILD_ROOT%{php_pear_dir}/Symfony/Component/%{package}
 
+%{__rm} -r $RPM_BUILD_ROOT%{php_pear_dir}/Symfony/Component/%{package}/Tests
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
