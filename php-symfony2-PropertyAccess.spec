@@ -3,12 +3,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 PropertyAccess Component
 Name:		php-symfony2-PropertyAccess
-Version:	2.7.3
+Version:	2.7.5
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
-# Source0-md5:	6a74a0b973acae2f0a304c2f87425797
+# Source0-md5:	63df2e2eb511f7390d02abca610a8947
 URL:		http://symfony.com/doc/2.7/components/property_access/introduction.html
 BuildRequires:	phpab
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -26,7 +26,7 @@ Provides function to read and write from/to an object or array using a
 simple string notation.
 
 %prep
-%setup -q -n %{package}-%{version}
+%setup -q -n property-access-%{version}
 
 %build
 phpab -n -e '*/Tests/*' -o autoloader.php .
