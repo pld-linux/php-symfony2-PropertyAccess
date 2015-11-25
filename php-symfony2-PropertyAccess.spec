@@ -33,10 +33,10 @@ phpab -n -e '*/Tests/*' -o autoload.php .
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/Symfony/Component/%{package}
-cp -a *.php */ $RPM_BUILD_ROOT%{php_pear_dir}/Symfony/Component/%{package}
+install -d $RPM_BUILD_ROOT%{php_data_dir}/Symfony/Component/%{package}
+cp -a *.php */ $RPM_BUILD_ROOT%{php_data_dir}/Symfony/Component/%{package}
 
-%{__rm} -r $RPM_BUILD_ROOT%{php_pear_dir}/Symfony/Component/%{package}/Tests
+%{__rm} -r $RPM_BUILD_ROOT%{php_data_dir}/Symfony/Component/%{package}/Tests
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -44,6 +44,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc CHANGELOG.md LICENSE README.md
-%dir %{php_pear_dir}/Symfony/Component/PropertyAccess
-%{php_pear_dir}/Symfony/Component/PropertyAccess/*.php
-%{php_pear_dir}/Symfony/Component/PropertyAccess/Exception
+%dir %{php_data_dir}/Symfony/Component/PropertyAccess
+%{php_data_dir}/Symfony/Component/PropertyAccess/*.php
+%{php_data_dir}/Symfony/Component/PropertyAccess/Exception
