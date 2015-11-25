@@ -3,12 +3,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 PropertyAccess Component
 Name:		php-symfony2-PropertyAccess
-Version:	2.7.5
+Version:	2.7.7
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
-# Source0-md5:	63df2e2eb511f7390d02abca610a8947
+# Source0-md5:	1969d078d2708c48a5add96170a623c8
 URL:		http://symfony.com/doc/2.7/components/property_access/introduction.html
 BuildRequires:	phpab
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -29,7 +29,7 @@ simple string notation.
 %setup -q -n property-access-%{version}
 
 %build
-phpab -n -e '*/Tests/*' -o autoloader.php .
+phpab -n -e '*/Tests/*' -o autoload.php .
 
 %install
 rm -rf $RPM_BUILD_ROOT
