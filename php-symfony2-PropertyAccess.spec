@@ -2,13 +2,13 @@
 %define		php_min_version 5.3.9
 Summary:	Symfony2 PropertyAccess Component
 Name:		php-symfony2-PropertyAccess
-Version:	2.7.8
+Version:	2.8.52
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
-# Source0-md5:	eb8729c0e6209e70d829b83a2afb51d3
-URL:		http://symfony.com/doc/2.7/components/property_access/introduction.html
+# Source0-md5:	4a7adf09ea5714b20b846ccdd56436ce
+URL:		https://symfony.com/doc/2.8/components/property_access.htmlintroduction.html
 BuildRequires:	phpab
 BuildRequires:	rpmbuild(macros) >= 1.610
 Requires:	php(core) >= %{php_min_version}
